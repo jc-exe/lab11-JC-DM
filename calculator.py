@@ -7,21 +7,8 @@ One function per operation, in order.
 
 import math
 
-def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError
-        return math.sqrt(a)
-    except ValueError:
-        raise ValueError("Cannot take the square root of a negative number")
-
-def hypotenuse(a, b):
-    try:
-        return math.hypot(a, b)
-    except ValueError:
-        raise ValueError("Invalid input")
-
-def add(a, b):
+# First example
+def add(a, b): 
     return a + b
 def subtract(a, b):
     return a - b
